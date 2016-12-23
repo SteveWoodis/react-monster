@@ -32,7 +32,7 @@ class Nav extends Component {
 
   render() {
     return (
-      <ul className="nav navbar-nav">
+      <ul className="nav navbar-nav"  style= {{backgroundColor: '#999999'}}>
         <li>
           <img
             src={process.env.PUBLIC_URL + '/assets/images/monsterfactions-symbol-mini.jpg'}
