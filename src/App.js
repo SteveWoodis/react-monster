@@ -5,11 +5,13 @@ import CSSModules from 'react-css-modules';
 
 import {grid, navbar} from 'bootstrap-css';
 import './App.css';
+/* RESET Style sheet */
+import './styles/reset.css';
 import routeHistory from './routeHistory';
 import store from './store';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/headerComponent/Header';
+import Footer from './components/footerComponent/Footer';
 import Home from './pages/Home';
 import Factions from './pages/Factions';
 import Game from './pages/Game';

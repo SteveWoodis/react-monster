@@ -1,7 +1,7 @@
 /* global process */
 
 import React from 'react';
-import Nav from './Nav';
+import Nav from './../navComponent/Nav';
 
 const Header = () => (
   <nav className="flex-row space-around" style={{width: '100%'}}>

@@ -1,11 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router';
-
 import Banner from '../components/Banner';
 import ShowAllBanner from '../components/ShowAllBanner';
 import MonsterPoints from '../components/MonsterPoints';
-import WeeklySpecials from '../components/WeeklySpecials';
-import MonsterMovies from '../components/MonsterMovies';
+import WeeklySpecials from '../components/weeklySpecialsComponent/WeeklySpecials';
+import MonsterMovies from '../components/monsterMoviesComponent/MonsterMovies';
 
 const Home = () => (
   <div className="content flex-container">
@@ -24,6 +23,7 @@ const Home = () => (
           <li className="monster-game-text-small">Click to play the fun new monster game with your neighbors.</li>
           <li className="monster-game-text-small">Start with your neighborhood. Then your zip code. And then ...</li>
         </ol>
+        
       </div>
       <div className="monster-gear">
         <ol>

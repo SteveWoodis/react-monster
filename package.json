@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
     "react-scripts": "0.7.0",
-    "@kadira/storybook": "^2.21.0"
+    "webpack": "^1.14.0"
   },
   "dependencies": {
     "bootstrap-css": "^3.0.0",

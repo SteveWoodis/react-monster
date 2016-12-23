@@ -1,4 +1,8 @@
 import React from 'react';
+import '../../styles/styles.css';
+import './wsphone-default.css';
+import './wstablet.css';
+import './wsdesktop.css';
 
 const Footer = () => (
   <div className="weekly-special-section">

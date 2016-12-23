@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
+import './components/navComponent/phone-default.css';
+import './components/navComponent/tablet.css';
+import './components/navComponent/desktop.css';
 import './styles/styles.css';
 import './styles/prettify.css';
 import './styles/flat-ui.css';
+
 import injectTapEventPlugin from "react-tap-event-plugin";
 injectTapEventPlugin();
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
@@ -19,3 +23,5 @@ ReactDOM.render(
   </MuiThemeProvider>,
   document.getElementById('root')
 );
+
+
