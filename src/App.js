@@ -26,7 +26,7 @@ const history = syncHistoryWithStore(routeHistory, store);
 const styles = {...grid, ...navbar};
 
 const MainWrapper = (props) => (
-  <div className="App flex-container flex-column">
+  <div className="App flex-container">
     <Header />
     {props.children}
     <Footer />

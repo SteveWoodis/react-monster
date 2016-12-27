@@ -32,11 +32,11 @@ class Nav extends Component {
 
   render() {
     return (
-      <ul className="nav navbar-nav"  style= {{backgroundColor: '#999999'}}>
+      <ul className="nav navbar-nav">
         <li>
           <img
             src={process.env.PUBLIC_URL + '/assets/images/monsterfactions-symbol-mini.jpg'}
-            alt="monster factions symbol"/>
+            alt="monster factions symbol" style={{width: '62px'}}/>
         </li>
         <li className="spacer">
           <Link to="/" className="spacer-font">Home</Link>
