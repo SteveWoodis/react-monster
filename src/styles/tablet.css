@@ -3,7 +3,22 @@
   h3 {
     color: green;
   }
-  
+  nav ul {
+
+  }
+
+  nav ul li {
+    width: auto;
+    margin: 0;
+
+
+
+  }
+
+  nav ul li a {
+    border-right: solid 1px #000;
+    background-color: rgba(0,0,0,.4);
+  }
   
   
 }/* end of media query */

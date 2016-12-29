@@ -1,6 +1,6 @@
 import React from 'react';
 import {Paper, TextField, FlatButton} from 'material-ui';
-import {Link} from 'react-router';
+/*import {Link} from 'react-router';*/
 
 const Contact = () => {
   const style = {

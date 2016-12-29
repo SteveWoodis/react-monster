@@ -10,6 +10,7 @@ import './styles/reset.css';
 import routeHistory from './routeHistory';
 import store from './store';
 
+import AppBarExampleIcon from './components/AppBar';
 import Header from './components/headerComponent/Header';
 import Footer from './components/footerComponent/Footer';
 import Home from './pages/Home';
@@ -32,10 +33,10 @@ const MainWrapper = (props) => (
     <Footer />
   </div>
 );
-const Practice = (props) => (
+const Specials = (props) => (
     <div>
       {props.route.junky}
-        <h1>I have made a react component</h1>
+        <h1>Welcome to the Weekly Specials</h1>
     </div>
 )
 
@@ -45,6 +46,7 @@ class App extends Component {
       <Router history={history}>
         <Route path="/" component={MainWrapper}>
           <IndexRoute component={Home}/>
+          <Route path="/appBar" components={AppBarExampleIcon}/>
           <Route path="/factions/:faction" components={Factions}/>
           <Route path="/game" components={Game}/>
           <Route path="/store" components={MonsterGear}/>
@@ -53,7 +55,7 @@ class App extends Component {
           <Route path="/contact" components={Contact}/>
           <Route path="/login" components={Login}/>
           <Route path="/register" components={Register}/>
-          <Route path='/practice' junky="this is a test" component={Practice}/>
+          <Route path='/specials' junky="this is a test" component={Specials}/>
         </Route>
       </Router>
     );
