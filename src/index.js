@@ -6,10 +6,6 @@ import './styles/styles.css';
 import './styles/prettify.css';
 import './styles/flat-ui.css';
 
-import './styles/phone-default.css';
-import './styles/tablet.css';
-import './styles/desktop.css';
-
 import injectTapEventPlugin from "react-tap-event-plugin";
 injectTapEventPlugin();
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';

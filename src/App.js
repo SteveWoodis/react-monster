@@ -10,7 +10,6 @@ import './styles/reset.css';
 import routeHistory from './routeHistory';
 import store from './store';
 
-import AppBarExampleIcon from './components/AppBar';
 import Header from './components/headerComponent/Header';
 import Footer from './components/footerComponent/Footer';
 import Home from './pages/Home';
@@ -46,7 +45,6 @@ class App extends Component {
       <Router history={history}>
         <Route path="/" component={MainWrapper}>
           <IndexRoute component={Home}/>
-          <Route path="/appBar" components={AppBarExampleIcon}/>
           <Route path="/factions/:faction" components={Factions}/>
           <Route path="/game" components={Game}/>
           <Route path="/store" components={MonsterGear}/>

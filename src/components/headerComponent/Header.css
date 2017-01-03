@@ -1,0 +1,26 @@
+
+.Navbar-standard {
+}
+
+/* Portrait and Landscape */
+
+
+/*@media screen*/
+/*and (device-width: 360px)*/
+/*and (device-height: 640px)*/
+/*and (-webkit-device-pixel-ratio: 3) {*/
+@media only screen and (max-width: 640px){
+   .Navbar-standard {
+    display: none !important;
+  }
+
+}
+@media only screen and (min-width: 641px) {
+  .Navbar-phone {
+    display: none !important;
+
+     }
+  .factionsTab {
+    margin-top: -20px;
+  }
+}
