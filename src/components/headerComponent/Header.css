@@ -1,6 +1,9 @@
 
 .Navbar-standard {
 }
+.Navbar-tablet {
+
+}
 
 /* Portrait and Landscape */
 
@@ -22,5 +25,13 @@
      }
   .factionsTab {
     margin-top: -20px;
+
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .Navbar-tablet {
+    background-color: #999999;
+    /*display: none !important;*/
   }
 }

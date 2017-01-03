@@ -1,6 +1,7 @@
 /* global process */
 
 import React, {Component} from 'react';
+
 import Nav from './../navComponent/Nav';
 import AppBar from 'material-ui/AppBar';
 import './Header.css';
@@ -69,6 +70,11 @@ class Header extends Component {
         <div className="container-fluid">
           <div className="col-xs-12">
             <AppBar className="Navbar-phone"
+                    style={{
+                width: '100%',
+                margin: '0 auto',
+                backgroundColor: '#999999',
+              }}
                     iconElementLeft={
                   <IconMenu
               iconButtonElement={
@@ -76,6 +82,7 @@ class Header extends Component {
               }
               targetOrigin={{horizontal: 'right', vertical: 'top'}}
               anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+
             >
               {navItems.map((item,index) => <MenuItem key={index}>{item}</MenuItem>)}
 
