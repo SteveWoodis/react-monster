@@ -23,7 +23,37 @@ const Footer = () => (
     <div className="footer-copyright">
       <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
     </div>
-  </div>
+    <div style={{
+                  /*display:'inline-flex',
+                  justifyContent:'space-around'*/
+                  }}>
+    <div style={{
+                width: '300',
+                height: '300',
+                backgroundColor: 'red',
+                display: 'inline-block'
+              }}></div>
+    <div style={{
+                width: '300',
+                height: '300',
+                backgroundColor: 'green',
+                display: 'inline-block'
+              }}></div>
+    <div style={{
+                width: '300',
+                height: '300',
+                backgroundColor: 'yellow',
+                display: 'inline-block'
+  }}></div>
+    <div style={{
+                  width: '300',
+                  height: '300',
+                  backgroundColor: 'aqua',
+                display: 'inline-block'
+                }}></div>
+      </div>
+    </div>
+
 );
 
 export default Footer;

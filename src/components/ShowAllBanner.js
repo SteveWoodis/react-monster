@@ -4,8 +4,8 @@ import React from 'react';
 
 const Banner = () => (
   <div className="showall-banner">
-    <p className="showall"><strong>SHOW ALL FACTIONS</strong></p>
-    <div className="flex-row space-around">
+    <p className="showall"><strong>ALL FACTIONS</strong></p>
+    <div className="flex-row">
       <div className="werewolf">
         <a href="/#/werewolf-landing"><img src={process.env.PUBLIC_URL + '/assets/images/werewolf-artwork1a.jpg'} alt="werewolf" className="imageBorder"/></a>
       </div>
