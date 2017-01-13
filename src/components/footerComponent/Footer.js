@@ -10,7 +10,7 @@ const Footer = () => (
         <div className="footer-feedback">Feedback</div>
         <div className="footer-policies">Guidelines/Policies</div>
       </div>
-      <div className="footer-spacer"/>
+      <div className="footer-spacer"></div>
       <div className="footer-links-right">
         <div className="facebook"><img src={process.env.PUBLIC_URL + '../assets/images/facebook.png'} alt="facebook"/></div>
         <div className="twitter"><img src={process.env.PUBLIC_URL + '../assets/images/twitter.png'} alt="twitter"/></div>
@@ -23,37 +23,7 @@ const Footer = () => (
     <div className="footer-copyright">
       <p>Copyright 2016 by intellectual Reserve, Inc All rights reserved.</p>
     </div>
-    <div style={{
-                  /*display:'inline-flex',
-                  justifyContent:'space-around'*/
-                  }}>
-    <div style={{
-                width: '300',
-                height: '300',
-                backgroundColor: 'red',
-                display: 'inline-block'
-              }}></div>
-    <div style={{
-                width: '300',
-                height: '300',
-                backgroundColor: 'green',
-                display: 'inline-block'
-              }}></div>
-    <div style={{
-                width: '300',
-                height: '300',
-                backgroundColor: 'yellow',
-                display: 'inline-block'
-  }}></div>
-    <div style={{
-                  width: '300',
-                  height: '300',
-                  backgroundColor: 'aqua',
-                display: 'inline-block'
-                }}></div>
-      </div>
-    </div>
-
+   </div>
 );
 
 export default Footer;

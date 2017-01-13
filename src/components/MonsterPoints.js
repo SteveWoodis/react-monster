@@ -1,7 +1,9 @@
 import React from 'react';
 
 const MonsterPoints = () => (
-  <div className="monster-points">
+  <div style={{width:'700px',
+    height:'auto',
+    display: 'inline-block'}}>
     <ol>
       <li className="monster-points-text"><strong>Monster Points</strong></li>
       <li className="monster-points-text-heading">The Leaders for the week are ...</li>

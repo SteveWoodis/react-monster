@@ -1,12 +1,15 @@
 export default{
   
   vampires: {
-    test: 'This is Vampires'
+    title: 'Vampires',
+    color: '#FFDFF7'
   },
   werewolves:{
-    test: 'This is Werewolves'
+    title: 'Werewolves',
+    color: '#FFE79F'
   },
   zombies: {
-    test: 'This is Zombies'
+    title: 'Zombies',
+    color: '#CFFFCD'
   }
 }

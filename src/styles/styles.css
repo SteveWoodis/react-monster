@@ -28,6 +28,8 @@ html, body{
     width: 100%;
     margin-bottom: 0px;
     padding-bottom: 0px;
+    display: flex;
+    justify-content:center;
 }
 .banner-img{
     height: 360px;
@@ -76,7 +78,6 @@ html, body{
 .monster-points {
     padding: 5px auto;
     margin: 5px auto;
-    display: inline-flex;
     height: 350px;
     width:50%;
 }
@@ -143,19 +144,16 @@ html, body{
 .weekly-special-section {
     padding: 5px auto;
     margin: 5px auto;
-    display: inline-flex;
+    display: inline-block;
     height: 250px;
     width:50%;
-    justify-content: center;
+
 }
 .monster-movies {
-    height:470px;
-    width: 1405px;
-    margin: 0px auto;
-    padding-top:2px;
-    padding-bottom: 2px;
     background-color: #000;
     color: #FFFFFF;
+    display: flex;
+    justify-content:center;
 }
 .monster-mural {
     margin-left: 75px;
@@ -167,13 +165,13 @@ html, body{
 }
 .monster-game {
     height:100%;
-    width:30%;
-    display: inline-flex;
+    width:369px;
+    display: inline-block;
 }
 .monster-gallery {
     height: 100%;
-    width:30%;
-    display: inline-flex;
+    width:368px;
+    display: inline-block;
 }
 .monster-gallery-text-small {
     display: block;
@@ -183,8 +181,8 @@ html, body{
 }
 .monster-gear {
     height: 100%;
-    width:30%;
-    display: inline-flex;
+    width:368px;
+    display: inline-block;
 }
 .monster-game-text {
     display: block;
@@ -399,14 +397,25 @@ html, body{
 .col-xs-12 {
     width: 100%;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
+}
+.col-xs-6{
+  width:702px;
+  display: block;
 }
 
+.col-xs-4{
+  width:368px;
+
+}
 .flex-row {
-    width: 1405px;
+    width: 100%;
     margin: 0 auto;
     list-style: none;
     font-size: 44px;
+}
+.compress-width {
+    width: 200px;
 }
 
 .flex-middle-row {
@@ -682,7 +691,7 @@ html, body{
     border-color: #000;
 }
 .banner{
- font-size: 60px;
+    font-size: 60px;
     text-align: center;
     color: black;
     font-family: "Something Strange";
@@ -704,8 +713,8 @@ a:hover {color: #ff0000; text-decoration: none; }*/
     position:relative;
 }
 .img {
-    height: 540px;
-    width: 500px;
+    max-width: 100%;
+    height: auto;
     //position: 100 100;
 }
 .footer-info-left{
