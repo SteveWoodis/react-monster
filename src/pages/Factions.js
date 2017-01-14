@@ -1,6 +1,6 @@
 import React from 'react';
 import factionData from './factionsData';
-import MessageList from './chat';
+
 
 const Factions = ({routeParams}) => (
     <div className="content">
@@ -22,7 +22,7 @@ const Factions = ({routeParams}) => (
         display: 'inline-block',
         backgroundColor: factionData[routeParams.faction].color,
         marginLeft:'10px',
-        paddingLeft:'10px'}} id="render-target">{MessageList.renderMessages()}</div>
+        paddingLeft:'10px'}} id="chat">Chat</div>
 
     </div>
 );

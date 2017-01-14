@@ -64,7 +64,7 @@ html, body{
 }
 .showall-banner{
     height:375px;
-    width: 1405px;
+
     padding-top:2px;
     padding-bottom: 2px;
     background-color: #f5e79e;
@@ -73,7 +73,6 @@ html, body{
     margin-left: 40px;
     font-size: 44px;
     text-align: center;
-
 }
 .monster-points {
     padding: 5px auto;
@@ -192,14 +191,16 @@ html, body{
 .monster-gear-text-small {
     display: block;
     width: 100%;
-    font-family: Calibri;
+    font-family: Calibri, Helvetica;
     font-size: 20px;
+    text-align: center;
 }
 .monster-game-text-small {
     display: block;
     width: 100%;
     font-family: Calibri;
     font-size: 20px;
+  padding-left:10px;
 }
 .monster-points-text {
     display: block;
@@ -212,6 +213,7 @@ html, body{
     width:100%;
     font-size: 16px;
     margin: 5px 5px 5px 10px;
+    text-align: center;
 }
 .monster-points-text-heading {
     display: block;
@@ -242,8 +244,9 @@ html, body{
 .monster-gear-text-small{
     display: block;
     width: 100%;
-    font-family: Calibri;
+    font-family: Calibri, Helvetica;
     font-size: 20px;
+    text-align: center;
 }
 .monster-gallery-text {
     display: block;
@@ -502,7 +505,7 @@ html, body{
     font-size: 21px;
     color: black;
     display: inline-block;
-
+    text-align: center;
 }
 .footer-logo{
     display: flex;

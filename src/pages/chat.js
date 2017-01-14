@@ -1,41 +1,47 @@
-import React, {Component} from 'react';
-import moment from 'react-moment';
+import React from 'react';
+import ReactDom from 'react-dom';
 
-const Message = (props) => {
-  const formatTime = (time) => moment(time).format('h:mm A');
-  return <li>{formatTime(props.message.time)} - {props.message.text}</li>;
-};
-
-class MessageList extends Component {
-  constructor() {
-    super();
-  }
-
-  renderMessages() {
-    const getMessages = () => {
-      return [
-        {_id: 1, time: new Date(), text: "A wonderful message. "},
-        {_id: 2, time: new Date(), text: "The next wonderful message "}
-      ]
-    };
-    return getMessages().map((message) => {
-      return <Message key={message._id} message={message}/>;
+let ChatApp = React.createClass({
+  getInitialState: function () {
+    return{
+      messages: [],
+      socket: window.io('http://localhost:3000')
+    }
+  },
+  componentDidMount: function (msg) {
+    let self = this;
+    this.state.socket.on("receive-message", function(msg){
+      var messages = self.state.messages;
+      messages.push(msg);
+      self.setState({messages: messages})
+      console.log(self.state.messages);
     });
-  }
+  },
+  submitMessage: function () {
+    let message = document.getElementById("message").value;
+    this.state.socket.emit("new-message", message);
+    console.log(message);
+  },
+  render: function(){
+    var i = 0;
+    var messages = this.state.messages.map(function(msg) {
+      return(
+        <li key={i}>{msg}</li>
+      );
+    });
 
-  render() {
-    return (
-      <div className="container">
-        <header>
-          <h2>Messages</h2>
-        </header>
-        <ul>
-          {this.renderMessages()}
-        </ul>
+    let self = this;
+    return(
+      <div>
+      <ul>
+        {messages}
+      </ul>
+        <input id="message" type="text"/><button onclick={self.submitMessage()}>Submit Message</button>
       </div>
-    );
+    )
   }
-}
-
-
-export default MessageList;
+});
+ReactDom.render(
+  <ChatApp/>,
+  document.getElementById('root')
+);

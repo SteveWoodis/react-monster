@@ -8,9 +8,12 @@ import MonsterMovies from '../components/monsterMoviesComponent/MonsterMovies';
 
 const Home = () => (
   <div className="content flex-container">
+    <!-- <div className="content flex-container"> -->
     <Banner/>
     <ShowAllBanner/>
-    <div className="flex-row">
+    <div style={{display:'flex',
+                  flexWrap:'wrap'}}>
+
       <MonsterPoints/>
       <WeeklySpecials/>
     </div>
