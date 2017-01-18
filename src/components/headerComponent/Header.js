@@ -57,7 +57,6 @@ class Header extends Component {
         </Popover>
       </div>,
       <Link to="/store" className="spacer-font">Monster Gear</Link>,
-      <Link to="/chat" className="spacer-font">Monster Chat</Link>,
       <Link to="/gallery" className="spacer-font">Monster Gallery</Link>,
       <Link to="/contact" className="spacer-font">Contact</Link>,
       <Link to="/login" className="spacer-font">Login</Link>,

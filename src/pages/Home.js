@@ -1,18 +1,18 @@
 import React from 'react';
 import {Link} from 'react-router';
-import Banner from '../components/Banner';
-import ShowAllBanner from '../components/ShowAllBanner';
-import MonsterPoints from '../components/MonsterPoints';
+import Banner from '../components/bannerComponent/Banner';
+import ShowAllBanner from '../components/showAllBannerComponent/ShowAllBanner';
+import MonsterPoints from '../components/monsterPointsComponent/MonsterPoints';
 import WeeklySpecials from '../components/weeklySpecialsComponent/WeeklySpecials';
 import MonsterMovies from '../components/monsterMoviesComponent/MonsterMovies';
 
 const Home = () => (
-  <div className="content flex-container">
-    <!-- <div className="content flex-container"> -->
+  <div className="flex-container">
+
     <Banner/>
     <ShowAllBanner/>
     <div style={{display:'flex',
-                  flexWrap:'wrap'}}>
+                  flexWrap: "wrap"}}>
 
       <MonsterPoints/>
       <WeeklySpecials/>

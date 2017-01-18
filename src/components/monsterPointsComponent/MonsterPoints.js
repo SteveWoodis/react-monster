@@ -2,7 +2,6 @@ import React from 'react';
 
 const MonsterPoints = () => (
   <div style={{width:'700px',
-    height:'auto',
     display: 'inline-block'}}>
     <ol>
       <li className="monster-points-text"><strong>Monster Points</strong></li>

@@ -3,7 +3,6 @@ import '../../styles/styles.css';
 
 const WeeklySpecials = () => (
   <div style={{width:'700px',
-    height:'auto',
     display: 'inline-block'}}>
     <div> 
       <h3>

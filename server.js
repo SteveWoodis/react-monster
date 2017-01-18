@@ -7,7 +7,7 @@ var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
 io.on('connection', function(socket){
-  console.log('We have a connection!');
+  alert('We have a connection!');
   socket.on("new-message", function(msg){
     console.log(msg);
     io.emit("receive-message", msg);

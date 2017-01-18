@@ -16,7 +16,6 @@ import Home from './pages/Home';
 import Factions from './pages/Factions';
 import Game from './pages/Game';
 import MonsterGear from './pages/MonsterGear';
-import MonsterChat from './pages/MonsterChat';
 import MonsterGallery from './pages/MonsterGallery/MonsterGallery';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
@@ -34,7 +33,7 @@ const MainWrapper = (props) => (
 );
 const Specials = (props) => (
     <div>
-      {props.route.junky}
+      {props.route.specials}
         <h1>Welcome to the Weekly Specials</h1>
     </div>
 )
@@ -48,12 +47,11 @@ class App extends Component {
           <Route path="/factions/:faction" components={Factions}/>
           <Route path="/game" components={Game}/>
           <Route path="/store" components={MonsterGear}/>
-          <Route path="/chat" components={MonsterChat}/>
           <Route path="/gallery" components={MonsterGallery}/>
           <Route path="/contact" components={Contact}/>
           <Route path="/login" components={Login}/>
           <Route path="/register" components={Register}/>
-          <Route path='/specials' junky="this is a test" component={Specials}/>
+          <Route path='/specials' specials="Weekly Specials" component={Specials}/>
         </Route>
       </Router>
     );

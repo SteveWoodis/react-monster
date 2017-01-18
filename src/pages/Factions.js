@@ -1,12 +1,12 @@
 import React from 'react';
 import factionData from './factionsData';
-
+import ChatApp from './chat';
 
 const Factions = ({routeParams}) => (
     <div className="content">
 
       <div style={{width:'490px',
-      height: '800px',
+      height: '80px',
       border: '2px solid black',
       borderRadius: '10',
       marginLeft:'20px',
@@ -16,13 +16,15 @@ const Factions = ({routeParams}) => (
 
 
         <div style={{width:'840px',
-        height: '800px',
+        height: '80px',
         border: '2px solid black',
         borderRadius: '10',
         display: 'inline-block',
         backgroundColor: factionData[routeParams.faction].color,
         marginLeft:'10px',
-        paddingLeft:'10px'}} id="chat">Chat</div>
+        paddingLeft:'10px'}}>
+          <ChatApp/>
+        </div>
 
     </div>
 );

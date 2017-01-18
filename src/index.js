@@ -5,7 +5,6 @@ import App from './App';
 import './styles/styles.css';
 import './styles/prettify.css';
 import './styles/flat-ui.css';
-
 import injectTapEventPlugin from "react-tap-event-plugin";
 injectTapEventPlugin();
 import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
