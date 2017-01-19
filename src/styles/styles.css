@@ -164,12 +164,14 @@ html, body{
     height: 100%;
     width:368px;
     display: inline-block;
+    text-align: center;
 }
 .monster-gallery-text-small {
     display: block;
     width: 100%;
     font-family: Calibri;
     font-size: 20px;
+    text-align: center;
 }
 .monster-gear {
     height: 100%;
@@ -180,7 +182,7 @@ html, body{
     height: 100%;
     display: block;
     width: 100%;
-
+    text-align: center;
 }
 .monster-gear-text-small {
     display: block;
@@ -191,6 +193,7 @@ html, body{
 }
 .monster-gear-text {
   display: block;
+  text-align: center;
 }
 
 .monster-game-text-small {
@@ -199,12 +202,15 @@ html, body{
     font-family: Calibri;
     font-size: 20px;
   padding-left:10px;
+  text-align: center;
+
 }
 .monster-points-text {
     display: block;
     width: 100%;
     font-size: 44px;
     margin: 5px 5px 5px 10px;
+    text-align: center;
 }
 .monster-points-text-small {
     display: inline-flex;
@@ -239,6 +245,7 @@ html, body{
 
 .monster-gallery-text {
     display: block;
+    text-align: center;
 }
 .white-font {
     color: #ffffff;

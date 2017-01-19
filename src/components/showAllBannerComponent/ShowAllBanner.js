@@ -6,7 +6,7 @@ const Banner = () => (
   <div className="showall-banner">
     <p className="showall"><strong>ALL FACTIONS</strong></p>
     <div style={{display:'flex',
-                  justifyContent:'space-between',
+                  justifyContent:'space-around',
                   flexWrap:'wrap'}}>
       <div style={{
                 width: '300px',
