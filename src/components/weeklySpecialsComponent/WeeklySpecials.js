@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/styles.css';
+import carouselData from './carouselData';
 
 const WeeklySpecials = () => (
   <div style={{width:'700px', display: 'inline-block'}}>
@@ -10,7 +11,7 @@ const WeeklySpecials = () => (
     </div>
     <div>
         <div style={{width: '300px', height: '300px',display: 'inline-block'}}>
-          <a href="/#/store"><img src={process.env.PUBLIC_URL + '/assets/images/monster_jewelry/cookie_monster_earrings.jpg'} alt="Cookie Monster Earrings" className="imageBorder"/></a>
+          <a href="/#/store"><img src={process.env.PUBLIC_URL + carouselData[slide1].image} alt="Cookie Monster Earrings" className="imageBorder"/></a>
         </div>
         <div style={{width:'300px', height:'300px', display:'inline-block', position:'absolute'}}>
           <p style={{fontSize:'16px', paddingLeft:'30px', color:'aqua'}}>Cookie Monster Earrings</p>
