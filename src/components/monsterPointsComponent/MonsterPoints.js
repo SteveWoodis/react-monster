@@ -1,10 +1,9 @@
 import React from 'react';
 
 const MonsterPoints = () => (
-  <div style={{width:'700px',
-    display: 'inline-block'}}>
+  <div style={{width:'700px', display: 'inline-block'}}>
     <ol>
-      <li className="monster-points-text"><h3>Monster Points</h3></li>
+      <li style={{paddingLeft:'30px', display:'flex', flexWrap:'wrap'}}><h3>Monster Points</h3></li>
       <li className="monster-points-text-heading">The Leaders for the week are ...</li>
       <div className="monster-points-text-small ng-scope">
         <div className="monster-points-text-small ng-binding">Steve Woodis</div>

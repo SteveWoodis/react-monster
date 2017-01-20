@@ -53,6 +53,7 @@ class Header extends Component {
             <MenuItem><Link to="/factions/werewolves" className="spacer-font">Werewolves</Link></MenuItem>
             <MenuItem><Link to="/factions/vampires" className="spacer-font">Vampires</Link></MenuItem>
             <MenuItem><Link to="/factions/zombies" className="spacer-font">Zombies</Link></MenuItem>
+            <MenuItem><Link to="/factions/fairies" className="spacer-font">Fairies</Link></MenuItem>
           </Menu>
         </Popover>
       </div>,

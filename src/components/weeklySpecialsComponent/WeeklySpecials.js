@@ -3,7 +3,7 @@ import '../../styles/styles.css';
 
 const WeeklySpecials = () => (
   <div style={{width:'700px', display: 'inline-block'}}>
-    <div style={{textAlign:'center'}}>
+    <div style={{paddingLeft:'20px', display:'flex', flexWrap:'wrap'}}>
       <h3>
         Weekly Specials
       </h3>

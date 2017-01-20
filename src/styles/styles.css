@@ -212,20 +212,21 @@ html, body{
     width: 100%;
     font-size: 44px;
     margin: 5px 5px 5px 10px;
-    text-align: center;
+    padding-left: 25px;
 }
 .monster-points-text-small {
     display: inline-flex;
     width:100%;
     font-size: 16px;
     margin: 5px 5px 5px 10px;
-    text-align: center;
+    padding-left: 25px;
 }
 .monster-points-text-heading {
     display: block;
     width:100%;
     font-size: 24px;
     margin: 5px 5px 5px 10px;
+    padding-left: 25px;
 }
 .chat-login-text {
     display: block;
