@@ -10,21 +10,24 @@ const Home = () => (
   <div className="flex-container">
 
     <Banner/>
-    <ShowAllBanner/>
-    <div style={{display:'flex',
-                  flexWrap: "wrap"}}>
-
-      <MonsterPoints/>
-      <WeeklySpecials/>
+    <div>
+      <div style={{display: 'inline-block'}}>
+        <ShowAllBanner/>
+      </div>
+      <div style={{display: 'inline-block', verticalAlign: 'top'}}>
+        <MonsterPoints/>
+      </div>
+      <div style={{display: 'inline-block'}}>
+        <WeeklySpecials/>
+      </div>
     </div>
     <MonsterMovies/>
     <div>
       <div style={{
                 width: '468px',
                 height: '300px',
-                backgroundColor: 'red',
                 display: 'inline-block'
-              }}>
+                }}>
               <ol>
               <li className="monster-game-text"><Link to="/game" className="spacer-font"><h3>Monster Game</h3></Link></li>
               <li className="monster-game-text-small">Click to play the fun new monster game with your neighbors.</li>
@@ -34,8 +37,8 @@ const Home = () => (
       <div style={{
                 width: '468px',
                 height: '300px',
-                backgroundColor: 'green',
-                display: 'inline-block'
+                display: 'inline-block',
+                verticalAlign: 'top'
               }}>
               <ol>
               <li className="monster-gear-text"><Link to="/store" className="spacer-font"><h3>Monster Gear</h3></Link></li>
@@ -45,8 +48,8 @@ const Home = () => (
       <div style={{
                 width: '468px',
                 height: '300px',
-                backgroundColor: 'yellow',
-                display: 'inline-block'
+                display: 'inline-block',
+                verticalAlign: 'top'
                 }}>
                 <ol>
                 <li className="monster-gallery-text"><Link to="/gallery" className="spacer-font"><h3>Monster Gallery</h3></Link></li>

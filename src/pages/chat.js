@@ -5,8 +5,8 @@ class ChatApp extends Component {
     super();
 
     this.state = {
-      messages: [],
-      socket: window.io('http://localhost:3000')
+      messages: []
+
     };
   }
   componentDidMount(msg) {

@@ -60,7 +60,9 @@ html, body{
     padding-top:2px;
     padding-bottom: 2px;
     background-color: #f5e79e;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .showall {
     margin-left: 40px;
