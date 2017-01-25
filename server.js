@@ -1,14 +1,11 @@
-/* global process */
 var express = require('express');
-var bodyParser = require('body-parser');
-/*var Customer = './Customer/Customer.controller';*/
 var app = express();
-app.use(bodyParser.json());
-app.set('port', (process.env.PORT || 3000));
+var server = require('socket.io');
+var http = require('http').createServer(app);
 app.use('/',express.static(__dirname + '/src'));
-/*app.use('/api/customer', Customer);*/
 
-new 
-app.listen(app.get('port'), () => {
-  console.log('Example app listening on port ' + app.get('port') + '!');
-});
+var users = [];
+var connections = [];
+
+server.listen(process.env.PORT || 3000);
+console.log("Server running on Port 3000");

@@ -17,6 +17,12 @@ export default{
     title: 'Zombie charm Bracelet',
     text: 'What better way to control Zombies. ',
     price: '$24.99'
+  },
+  slide4:{
+    image: '',
+    title: '',
+    text: '',
+    price: ''
   }
 
 }

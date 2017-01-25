@@ -2,7 +2,7 @@ export default{
   
   vampires: {
     title: 'Vampires',
-    color: '#FFDFF7'
+    color: '#F780807'
   },
   werewolves:{
     title: 'Werewolves',
@@ -13,7 +13,7 @@ export default{
     color: '#CFFFCD'
   },
   fairies: {
-    title: 'fairies',
+    title: 'Fairies',
     color: '#d2f4e9'
   }
 }

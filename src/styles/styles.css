@@ -15,6 +15,53 @@ html, body{
  background-color: #544B3E;
 
 }
+.carousel {
+  position: relative;
+  height:100%;
+  width:100%
+}
+.slides {
+  height:100%;
+  width:100%;
+  position: relative;
+}
+.slide {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  font-size: 3em;
+  color: grey;
+  line-height:400px;
+  text-align: center;
+  opacity:0;
+}
+.slide:nth-child(1) {
+
+  opacity: 1;
+}
+
+.slide:nth-child(2) {
+
+}
+
+.slide:nth-child(3) {
+
+}
+
+.slide[data-state=active] {
+  display: block;
+}
+.indicators {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.indicator {
+  cursor: pointer;
+}
 .monster-label {
     /*font-family: 'DarkCrystalScript', sans-serif;*/
     font-family: Calibri;
