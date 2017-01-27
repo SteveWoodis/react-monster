@@ -5,29 +5,30 @@ class Chat extends Component {
   constructor(props){
     super(props);
     this.state = {
-      message: [
-        {text: "Hello World"}
-      ],
+      message: [],
       currentMessage: "This is a new message",
       username:"Steve",
       users: []
     };
     this.pubnub = new PubNub({
-      PublishKey: 'pub-c-b3f76d0b-2a61-490d-acd4-dae96f7acfe3',
-      SubscribeKey: 'sub-c-43bc55aa-de4f-11e4-bb6f-0619f8945a4f'
+      PublishKey: 'pub-c-e1b98bf1-918e-4ca1-ad09-63c63f86f74a',
+      SubscribeKey: 'sub-c-8173fffa-e36c-11e6-8d2d-02ee2ddab7fe'
     });
   }
-  sendMessage(){
-    console.log(this.refs.input.value);
-
-    this.setState({currentMessage:""});
-  }
-
   changedMessage(){
     this.setState({currentMessage:this.refs.input.value});
   }
-  render() {
+  sendMessage(){
+    console.log(this.refs.input.value);
+    this.setState({currentMessage: this.refs.input.value});
+    this.state.message.push(this.refs.input.value);
+    
 
+   /*this.setState({currentMessage:""});*/
+  }
+
+  render() {
+    let messages = this.state.message;
     return <div className="vbox fill">
       <h4>Welcome to the MonsterFactions Chatroom</h4>
 
@@ -36,11 +37,11 @@ class Chat extends Component {
                value={this.state.currentMessage}
                onChange={this.changedMessage.bind(this)}
         />
-        <button onClick={this.sendMessage.bind(this)}>Send</button>
-
+        <button onClick={this.sendMessage.bind(this)}>Send</button><br/>
+        {messages.map((message,index) => <li key={index}>{message}</li>)}
         </div>
       </div>
-  }
+}
 }
 export default Chat;
 /*   this.pubnub.addListener({
@@ -64,4 +65,5 @@ export default Chat;
  text:this.refs.input.value,
  sender: this.pubnub.getUUID()
  }
- });*/
+ });
+ */

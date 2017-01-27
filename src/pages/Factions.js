@@ -11,7 +11,8 @@ const Factions = ({routeParams}) => (
       borderRadius: '10px',
       marginLeft:'20px',
       display:'inline-block',
-      paddingLeft:'10px'
+      paddingLeft:'10px',
+      verticalAlign:'top'
       }}><h4>{factionData[routeParams.faction].title}</h4></div>
 
 
