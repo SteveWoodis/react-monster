@@ -15,8 +15,9 @@ import Footer from './components/footerComponent/Footer';
 import Home from './pages/Home';
 import Factions from './pages/Factions';
 import Game from './pages/Game';
-import MonsterGear from './pages/MonsterGear';
-import MonsterGallery from './pages/MonsterGallery/MonsterGallery';
+import Store from './pages/MonsterGear';
+import Gallery from './pages/MonsterGallery/MonsterGallery';
+import Movies from './components/monsterMoviesComponent/moviesList';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -46,9 +47,10 @@ class App extends Component {
           <IndexRoute component={Home}/>
           <Route path="/factions/:faction" components={Factions}/>
           <Route path="/game" components={Game}/>
-          <Route path="/store" components={MonsterGear}/>
-          <Route path="/gallery" components={MonsterGallery}/>
+          <Route path="/store" components={Store}/>
+          <Route path="/gallery" components={Gallery}/>
           <Route path="/contact" components={Contact}/>
+          <Route path="/Movies" components={Movies}/>
           <Route path="/login" components={Login}/>
           <Route path="/register" components={Register}/>
           <Route path='/specials' specials="Weekly Specials" component={Specials}/>

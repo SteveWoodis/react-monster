@@ -1,11 +1,11 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var Customer = require('./src/Customer/Customer.controller');
+/*var Customer = require('./Customer/Customer.controller');*/
 app.use(bodyParser.json());
 app.set('port', (process.env.PORT || 3000));
-app.use('/',express.static(__dirname + '/src'));
-app.use('/api/customer', Customer);
+app.use('/',express.static(__dirname + '/build'));
+/*app.use('/api/customer', Customer);*/
 
 
 app.listen(app.get('port'), function () {

@@ -4,7 +4,7 @@ import React from 'react';
 const Nav = (props) => {
 
   return (
-    <ul className={props.className + ' nav navbar-nav'}>
+    <ul className={props.className + ' nav navbar-nav fixed-nav-bar'}>
       <li>
         <img
           src={process.env.PUBLIC_URL + '/assets/images/monsterfactions-symbol-mini.jpg'}

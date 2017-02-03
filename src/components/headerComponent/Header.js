@@ -57,8 +57,9 @@ class Header extends Component {
           </Menu>
         </Popover>
       </div>,
-      <Link to="/store" className="spacer-font">Monster Gear</Link>,
-      <Link to="/gallery" className="spacer-font">Monster Gallery</Link>,
+      <Link to="/store" className="spacer-font">Store</Link>,
+      <Link to="/gallery" className="spacer-font">Gallery</Link>,
+      <Link to="/Movies" className="spacer-font">Movies</Link>,
       <Link to="/contact" className="spacer-font">Contact</Link>,
       <Link to="/login" className="spacer-font">Login</Link>,
       <Link to="/specials" className="spacer-font">Specials</Link>
