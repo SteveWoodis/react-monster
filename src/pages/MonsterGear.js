@@ -1,11 +1,10 @@
 import React from 'react';
 
 const MonsterGear = () => (
-  <div className="content flex-row" style={{width: '100%'}}>
+  <div className="content" style={{width: '100%'}}>
     <div>
       <p className="text-info ng-scope">
-        Welcome to the MonsterFactions Store.<br/>
-        Please select the products you want and add them to your shopping cart.<br/>
+        Welcome to the MonsterFactions Store. Please select the products you want and add them to your shopping cart.<br/>
         When you are done, click the shopping cart icon to review your order and check out.
       </p>
 

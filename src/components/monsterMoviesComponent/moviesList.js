@@ -18,9 +18,9 @@ class monsterData extends React.Component{
     let items = this.state.items
     return(
       <div>
-        {items.map(item => <h5 key={item.title}>{item.title}</h5>)}
+        {items.map(item => <h5 key={item.title} style={{marginLeft: '15px'}}>{item.title}</h5>)}
       </div>
     )
   }
 }
-export default monsterData
+export default monsterData;

@@ -36,7 +36,7 @@ class Header extends Component {
     this.setState({
       factionsDropdownOpen: false
     });
-  }
+ }
 
   render() {
     const navItems = [
