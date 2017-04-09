@@ -1,4 +1,5 @@
 import React from 'react';
+import './movie.css';
 
 class monsterData extends React.Component{
   constructor(){
@@ -11,14 +12,19 @@ class monsterData extends React.Component{
       .then( ({results: items}) => this.setState({items}))
   }
 
-
-
-
   render(){
     let items = this.state.items
+    let imageBaseUrl = "https://image.tmdb.org/t/p/w185_and_h278_bestv2";
     return(
-      <div>
-        {items.map(item => <h5 key={item.title} style={{marginLeft: '15px'}}>{item.title}</h5>)}
+      <div className="main">
+        {items.map(item =>
+          <div key={item.id} className="movieBox">
+             <div className="backdropPic"><img src={imageBaseUrl + item.backdrop_path}/></div>
+              <div className="info">
+                <div className="movieTitle">{item.title}</div>
+                <div className="movieOverview">{item.overview}</div>
+              </div>
+          </div>)}
       </div>
     )
   }

@@ -1,5 +1,8 @@
-import * as React from 'react';
-export default class ChatInput extends React.Component {
+import React, {Component} from 'react';
+import './chat.css';
+import PubNub from 'pubnub';
+
+export default class ChatInput extends Component {
   render() {
     return (
       <div className="teal">
