@@ -11,7 +11,7 @@ app.get('/werewolfMovie', function (req, res) {
   request('https://api.themoviedb.org/3/search/movie?api_key=2c8889cb44ec3da352062419180957cf&language=en-US&query=werewolf&page=1&certification_country=US&certification.lte=PG13&include_adult=false&region=werewolf&year=>1960',
     function (error, response, body) {
       if (!error && response.statusCode == 200) {
-        console.log(body); // Show the HTML for the Google homepage.
+        console.log(body); 
         console.log('The werewolf movie array');
         res.send({ success: true, content: body})
       } else {

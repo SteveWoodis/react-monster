@@ -14,10 +14,8 @@ const Home = () => (
       <div style={{display: 'inline-block'}}>
         <ShowAllBanner/>
       </div>
-      <div style={{display: 'inline-block', verticalAlign: 'top'}}>
+      <div style={{display: 'flex', justifyContent: 'center', verticalAlign: 'top'}}>
         <MonsterPoints/>
-      </div>
-      <div style={{display: 'inline-block'}}>
         <WeeklySpecials/>
       </div>
     </div>

@@ -1,16 +1,12 @@
 .main {
   width: 1000px;
   margin:0;
+  display: block;
 }
 .movieBox {
-  margin:20px 10px 24px 10px;
   display: flex;
-  align-items: center;
-  width:483px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  clear: left;
+  margin-right:10px;
+  width:450px;
   border-style:solid;
   border-color: #000;
   border-width: 2px;

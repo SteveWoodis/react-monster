@@ -15,14 +15,13 @@ class monsterData extends React.Component{
   render(){
     let items = this.state.items
     let imageBaseUrl = "https://image.tmdb.org/t/p/w185_and_h278_bestv2";
-    return(
+    return( 
       <div className="main">
-        {items.map(item =>
-          <div key={item.id} className="movieBox">
-             <div className="backdropPic"><img src={imageBaseUrl + item.poster_path} alt="poster"/></div>
-              <div className="info">
-                <div className="movieTitle">{item.title}</div>
-                <div className="movieOverview">{item.overview}</div>
+        {items.map(item => <div key={item.id} className="movieBox">
+             <div ><img src={imageBaseUrl + item.poster_path} alt="poster"/></div>
+              <div>
+                <div>{item.title}</div>
+                <div>{item.overview}</div>
               </div>
           </div>)}
       </div>
