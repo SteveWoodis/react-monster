@@ -1,7 +1,6 @@
 import React from 'react';
 import factionData from './factionsData';
-import ChatHistory from '../components/chatComponent/chatHistory';
-import ChatInput from '../components/chatComponent/chatInput';
+import Chat from '../components/chatComponent/chatComponent';
 
 const Factions = ({routeParams}) => (
     <div className="content">
@@ -25,8 +24,7 @@ const Factions = ({routeParams}) => (
         backgroundColor: factionData[routeParams.faction].color,
         marginLeft:'10px',
         paddingLeft:'10px'}}>
-          <ChatHistory />
-          <ChatInput />
+          <Chat />
         </div>
 
     </div>

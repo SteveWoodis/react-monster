@@ -20,7 +20,10 @@ const Home = () => (
       </div>
     </div>
     <MonsterMovies/>
-    <div>
+    <div style={{
+      display: 'flex',
+      justifyContent: 'space-around'
+    }}>
       <div style={{
                 width: '468px',
                 height: '300px',

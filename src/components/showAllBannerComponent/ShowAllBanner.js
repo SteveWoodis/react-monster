@@ -5,7 +5,7 @@ import {Link} from 'react-router';
 import '../../styles/styles.css';
 
 const ShowAllBanner = () => (
-  <div style={{backgroundColor:'#f5e79e',display:'flex', justifyContent:'space-around', flexWrap:'wrap'}}>
+  <div style={{display:'flex', justifyContent:'space-around', flexWrap:'wrap'}}>
     <p style={{marginLeft: '40px',fontSize: '44px', textAlign:'center', display:'block'}}><strong>FACTIONS</strong></p>
   <div>
     <div className="bannerWrapper">
