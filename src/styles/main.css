@@ -6,10 +6,7 @@
 }
 
 @font-face {
-    font-family: 'DarkCrystalScript';
-    src: url('../../public/assets/fonts/DarkCrystalScript.ttf');
-    src: url('../../public/assets/fonts/DarkCrystalScript.ttf?#iefix') format('embedded-opentype'),
-    url('../../public/assets/fonts/DarkCrystalScript.ttf') format('truetype');
+    font-family: 'Calibri';
     font-weight: normal;
     font-style: normal;
 }

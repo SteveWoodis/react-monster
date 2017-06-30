@@ -6,8 +6,7 @@
   font-style: normal;
 }
 @font-face {
-    font-family: 'DarkCrystalScript';
-    src: url('../../public/assets/fonts/DarkCrystalScript.ttf') format('truetype');
+    font-family: 'Calibri';
     font-weight: normal;
     font-style: normal;
 }
@@ -455,8 +454,7 @@ small,
   color: #25a35a;
 }
 @font-face {
-    font-family: 'DarkCrystalScript';
-    src: url('../../public/assets/fonts/DarkCrystalScript.ttf') format('truetype');
+    font-family: 'Calibri';
     font-weight: normal;
     font-style: normal;
 }
@@ -1901,8 +1899,8 @@ textarea {
   padding: 5px 11px;
 }
 label {
-  font-family: DarkCrystalScript;
-  color: red;
+  font-family: Calibri;
+  color: black;
   font-size: 20px;
   font-weight: normal;
   line-height: 1.9986363100000002em;

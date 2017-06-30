@@ -5,8 +5,7 @@ html, body{
 
 }
 @font-face {
-    font-family: 'DarkCrystalScript';
-    src: url('../../public/assets/fonts/DarkCrystalScript.ttf') format('truetype');
+    font-family: 'Calibri';
     font-weight: normal;
     font-style: normal;
 }
@@ -68,7 +67,6 @@ html, body{
   cursor: pointer;
 }
 .monster-label {
-    /*font-family: 'DarkCrystalScript', sans-serif;*/
     font-family: Calibri;
     font-size: 20px;
     margin: 10px auto;

@@ -5,7 +5,7 @@ function NewMessageInput({ onSend, onTextChange, currentText }) {
   return (
     <form onSubmit={onSend}>
       <label>
-        Message:
+        Type Message:
         <input type="text" value={currentText} onChange={onTextChange} />
       </label>
       <button type="submit">Send</button>
