@@ -124,7 +124,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
+See the div about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
@@ -338,7 +338,7 @@ Webpack finds all relative module references in CSS (they start with `./`) and r
 Please be advised that this is also a custom feature of Webpack.
 
 **It is not required for React** but many people enjoy it (and React Native uses a similar mechanism for images).<br>
-An alternative way of handling static assets is described in the next section.
+An alternative way of handling static assets is described in the next div.
 
 ## Using the `public` Folder
 
@@ -370,7 +370,7 @@ In JavaScript code, you can use `process.env.PUBLIC_URL` for similar purposes:
 render() {
   // Note: this is an escape hatch and should be used sparingly!
   // Normally we recommend using `import` for getting asset URLs
-  // as described in “Adding Images and Fonts” above this section.
+  // as described in “Adding Images and Fonts” above this div.
   return <img src={process.env.PUBLIC_URL + '/img/logo.png'} />;
 }
 ```

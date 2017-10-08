@@ -1,61 +1,143 @@
 import React from 'react';
-import {Link} from 'react-router';
-import Banner from '../components/bannerComponent/Banner';
-import ShowAllBanner from '../components/showAllBannerComponent/ShowAllBanner';
-import MonsterPoints from '../components/monsterPointsComponent/MonsterPoints';
-import WeeklySpecials from '../components/weeklySpecialsComponent/WeeklySpecials';
-import MonsterMovies from '../components/monsterMoviesComponent/MonsterMovies';
-
+import '../styles/styles.css';
 const Home = () => (
-  <div className="flex-container">
+    <div className="flex-container">
 
-    <Banner/>
     <div>
-      <div style={{display: 'inline-block'}}>
-        <ShowAllBanner/>
-      </div>
-      <div style={{display: 'flex', justifyContent: 'center', verticalAlign: 'top'}}>
-        <MonsterPoints/>
-        <WeeklySpecials/>
+      <img src={process.env.PUBLIC_URL + '/assets/img/scary-landscape-3.jpg'} alt="opening"/>
+
+      <h1>Welcome to our Site</h1>
+    </div>
+    <div className="one-half">
+      <h3>Heading TItle</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. </p>
+    </div>
+    <div className="one-half">
+      <h3>Heading TItle</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. </p>
+    </div>
+
+    <div className="clearfix"></div>
+    <div className="parallax-1">
+      <div className="parallax-inner">
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
       </div>
     </div>
-    <MonsterMovies/>
-    <div style={{
-      display: 'flex',
-      justifyContent: 'space-around'
-    }}>
-      <div style={{
-                width: '468px',
-                height: '300px',
-                display: 'inline-block'
-                }}>
-              <ol>
-              <li className="monster-game-text"><Link to="/game" className="spacer-font"><h3>Monster Game</h3></Link></li>
-              <li className="monster-game-text-small">Click to play the fun new monster game with your neighbors.</li>
-              <li className="monster-game-text-small">Start with your neighborhood. Then your zip code. And then ...</li>
-              </ol>
+    <div className="clearfix"></div>
+    <div className="left-col">
+      <h3>Upcoming Factions</h3>
+      <p>We are always looking for new factions to add to our site. Everyone has a favorite mythical creature that
+      fascinates them. We encourage you to submit new creatures for consideration. </p>
+      <p>New factions will be added if there is sufficient demand. So get get your friends and family to join
+      MonsterFactions and have them vote for your favorite faction.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. </p>
+    </div>
+    <div className="sidebar">
+      <img src={process.env.PUBLIC_URL + '/assets/img/fairy-song.jpg'} alt="Fairy"/>
+    </div>
+    <div className="clearfix"></div>
+    <div className="parallax-2">
+      <div className="parallax-inner">
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
       </div>
-      <div style={{
-                width: '468px',
-                height: '300px',
-                display: 'inline-block',
-                verticalAlign: 'top'
-              }}>
-              <ol>
-              <li className="monster-gear-text"><Link to="/store" className="spacer-font"><h3>Monster Gear</h3></Link></li>
-              <li className="monster-gear-text-small">Click to shop our online store for all the latest MonsterFaction styles.</li>
-              </ol>
+    </div>
+    <div className="clearfix"></div>
+    <div id="banner-wrapper">
+      <h1>Last Title</h1>
+      <div className="one-third">
+        <h3>Heading TItle</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. </p>
       </div>
-      <div style={{
-                width: '468px',
-                height: '300px',
-                display: 'inline-block',
-                verticalAlign: 'top'
-                }}>
-                <ol>
-                <li className="monster-gallery-text"><Link to="/gallery" className="spacer-font"><h3>Monster Gallery</h3></Link></li>
-                <li className="monster-gallery-text-small">Click to view all the latest Monster Art. Or even submit one of your own works of art!</li>
-                </ol>
+      <div className="one-third">
+        <h3>Heading TItle</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. </p>
+      </div>
+      <div className="one-third">
+        <h3>Heading TItle</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. </p>
+      </div>
+    </div>
+    <div className="clearfix"></div>
+
+    <div className="parallax-3">
+      <div className="parallax-inner">
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
+        <div className="one-third">
+          <h3>Heading TItle</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. </p>
+        </div>
       </div>
     </div>
   </div>
