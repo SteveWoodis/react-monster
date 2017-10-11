@@ -9,7 +9,7 @@ import IconMenu from 'material-ui/IconMenu';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui/svg-icons/navigation/menu';
 import {Link} from 'react-router';
-import {Popover, Menu, MenuItem} from 'material-ui';
+import {Popover, MenuItem} from 'material-ui';
 
 
 class Header extends Component {

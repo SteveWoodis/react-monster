@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Hind);
 @import url(https://fonts.googleapis.com/css?family=Nobile);
+
 html, body {
 
   height: 100%;
@@ -885,7 +886,6 @@ a:hover {color: #ff0000; text-decoration: none; }*/
   opacity: .75;
 }
 
-
 * {
   margin: 0;
   border: 0;
@@ -893,7 +893,7 @@ a:hover {color: #ff0000; text-decoration: none; }*/
 }
 
 body {
-  background-color: #FFF;
+  background-color: #00bdef;
   font-family: 'Hind', sans-serif;
   font-size: 18px;
   position: relative;
@@ -908,6 +908,24 @@ h1 {
   letter-spacing: 3px;
   padding: 3% 0;
 
+}
+
+div .banner-zombie {
+  width: 100%;
+  height: 450px;
+  background-color: #E6E08C;
+}
+
+div .banner-wolf {
+  width: 100%;
+  height: 650px;
+  background-color: aquamarine;
+}
+
+div .banner-vampire {
+  width: 100%;
+  height: 650px;
+  background-color: #e5e3de;
 }
 
 .clearfix {
@@ -977,12 +995,11 @@ img {
 
 .parallax-inner {
   padding-top: 30px;
-  padding-bottom: 360px;
+  padding-bottom: 460px;
 }
 
 footer {
   background-color: #1f1f1f;
-
 }
 
 .footer {
