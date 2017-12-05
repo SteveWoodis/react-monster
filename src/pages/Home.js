@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import '../styles/styles.css';
-const Home = () => (
+
+class Home extends Component {
+render() {
+  return (
   <div className="flex-container">
     <div>
       <img src={process.env.PUBLIC_URL + '/assets/img/scary-landscape-3.jpg'} alt="opening"/>
@@ -31,18 +34,19 @@ const Home = () => (
             commonly magic.</p>
         </div>
         <div className="one-third">
-          <h3>Heading TItle</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. </p>
+          <h3>Zombie's Today</h3>
+          <p>The modern conception of the zombie owes itself almost entirely to George A. Romero's 1968 film Night of
+            the Living Dead. In his films, Romero "bred the zombie with the vampire, and what he got was
+            the hybrid vigour of a ghoulish plague monster". This entailed an apocalyptic vision of monsters that
+            have come to be known as Romero zombies. </p>
         </div>
         <div className="one-third">
-          <h3>Heading TItle</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. </p>
+          <h3>Zombie Apocalypse</h3>
+          <p>Intimately tied to the concept of the modern zombie is the "zombie apocalypse"; the breakdown of society
+            as a result of an initial zombie outbreak that spreads. This archetype has emerged as a prolific subgenre
+            of apocalyptic fiction and has been portrayed in many zombie-related media after Night of the Living Dead.
+            In a zombie apocalypse, a widespread (usually global) rise of zombies hostile to human life engages in a
+            general assault on civilization.</p>
         </div>
       </div>
     </div>
@@ -130,6 +134,8 @@ const Home = () => (
       </div>
     </div>
   </div>
-);
+  )
+};
+}
 
 export default Home;

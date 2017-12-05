@@ -1,33 +1,69 @@
-import React from 'react';
-import {Paper, TextField, FlatButton} from 'material-ui';
-import {Link} from 'react-router';
+import React, {Component} from 'react';
+import { Navbar, Button } from 'react-bootstrap';
+import Auth from '../Auth/Auth';
+import history from '../routeHistory';
+const auth = new Auth();
 
-const Login = () => {
-  const style = {
-    padding: 20,
-    margin: '0 0 40px 0',
-    width: 600
-  };
-  return (
-    <div className="content flex-row space-around">
-      <Paper style={style} zDepth={1}>
-        <TextField
-          fullWidth
-          hintText="Hint Text"
-          floatingLabelText="Username"
-        /><br />
-        <TextField
-          fullWidth
-          type="password"
-          hintText="Hint Text"
-          floatingLabelText="Password"
-          errorText="This field is required."
-        /><br />
-        <FlatButton label="Login"/>
-        <p>Don't have an account? <Link to="/register">Register</Link></p>
-      </Paper>
-    </div>
-  );
+class Login extends Component {
+  goTo(route) {
+    history.replace('/$(route)')
+  }
+  login() {
+    auth.login();
+  }
+  logout() {
+    auth.logout();
+  }
+  render() {
+    const { isAuthenticated } = auth;
+
+    return (
+      <div>
+        <Navbar fluid>
+          <Navbar.Header>
+            <Button
+              bsStyle="primary"
+              className="btn-margin"
+              onClick={this.goTo.bind(this, 'home')}
+            >
+              Home
+            </Button>
+            {
+              !isAuthenticated() && (
+                <Button
+                  bsStyle="primary"
+                  className="btn-margin"
+                  onClick={this.login.bind(this)}
+                >
+                  Log In
+                </Button>
+              )
+            }
+            {
+              isAuthenticated() && (
+                <Button
+                  bsStyle="primary"
+                  className="btn-margin"
+                  onClick={this.logout.bind(this)}
+                >
+                  Log Out
+                </Button>
+              )
+            }
+          </Navbar.Header>
+        </Navbar>
+        <div>
+          <p>This is a test from the Login page </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+          <p> </p>
+        </div>
+      </div>
+    );
+  }
 };
 
 export default Login;

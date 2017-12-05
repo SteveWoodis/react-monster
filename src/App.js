@@ -2,15 +2,13 @@ import React, { Component } from 'react';
 import { Router, IndexRoute, Route } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import CSSModules from 'react-css-modules';
-
-
 import { grid, navbar } from 'bootstrap-css';
 import './App.css';
 /* RESET Style sheet */
 import './styles/reset.css';
 import routeHistory from './routeHistory';
 import store from './store';
-
+import Callback from './Callback/callback';
 import Header from './components/headerComponent/Header';
 import Footer from './components/footerComponent/Footer';
 import Home from './pages/Home';
@@ -21,10 +19,16 @@ import Gallery from './pages/MonsterGallery/MonsterGallery';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Register from './pages/Register';
-
+import Auth from './Auth/Auth';
+const auth = new Auth();
 const history = syncHistoryWithStore(routeHistory, store);
 const styles = { ...grid, ...navbar };
 
+const handleAuthentication = (nextState, replace) => {
+  if (/access_token|id_token|error/.test(nextState.location.hash)) {
+    auth.handleAuthentication();
+  }
+}
 const MainWrapper = props => (
   <div className="App flex-container">
     <Header />
@@ -45,6 +49,7 @@ class App extends Component {
       <Router history={history}>
         <Route path="/" component={MainWrapper}>
           <IndexRoute component={Home} />
+          <Route path="/home" render={(props) => <Home auth={auth} {...(props)} />} />
           <Route path="/factions/:faction" components={Factions} />
           <Route path="/game" components={Game} />
           <Route path="/store" components={Store} />
@@ -53,6 +58,10 @@ class App extends Component {
           <Route path="/login" components={Login} />
           <Route path="/register" components={Register} />
           <Route path="/specials" specials="Weekly Specials" component={Specials} />
+          <Route path="/callback" render={(props) => {
+            handleAuthentication(props);
+            return <Callback {...props} />
+          }} />
         </Route>
       </Router>
     );
